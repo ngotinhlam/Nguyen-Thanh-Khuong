@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/background_item_product">
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day Dien Boc PYC"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#00f"
+        android:layout_marginTop="5dp"
+        android:lines="2"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50000"
+        android:textColor="#f00"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:id="@+id/btnCart"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:background="@drawable/background_button_cart"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>

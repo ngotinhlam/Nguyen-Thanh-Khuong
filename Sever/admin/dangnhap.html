@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Meta, title, CSS, favicons, etc. -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Quản trị - Đăng nhập</title>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <!-- NProgress -->
+        <link href="css/nprogress.css" rel="stylesheet">
+        <!-- iCheck -->
+        <link href="css/green.css" rel="stylesheet">
+        <!-- bootstrap-progressbar -->
+        <link href="css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+        <!-- JQVMap -->
+        <link href="css/jqvmap.min.css" rel="stylesheet"/>
+        <!-- bootstrap-daterangepicker -->
+        <link href="css/daterangepicker.css" rel="stylesheet">
+        <!-- Custom Theme Style -->
+        <link href="css/custom.min.css" rel="stylesheet">
+        <!-- chèn điều khiển -->
+        <script src="js/angular.min.js" type="text/javascript"></script>
+        <script src="js/angular-ui-router.min.js" type="text/javascript"></script>
+        <script src="controllers/dangnhap.js" type="text/javascript"></script>
+    </head>
+
+    <body ng-app="dangnhap" ng-controller="ctrl_dangnhap" class="login">
+        <div class="login_wrapper">
+            <div class="animate form login_form">
+                <section class="login_content">
+                    <form name="dangnhap" novalidate>
+                        <h1>QUẢN TRỊ</h1>
+                        <div>
+                            <input type="text" class="form-control" placeholder="Tên tài khoản" ng-model="tentaikhoan" required />                        </div>
+                        <div>
+                            <input type="password" class="form-control" placeholder="Mật khẩu" ng-model="matkhau" required />
+                        </div>
+                        <div>
+                            <a ng-disabled="dangnhap.$invalid" class="btn btn-default submit" href="" ng-click="DangNhap()">Đăng nhập</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

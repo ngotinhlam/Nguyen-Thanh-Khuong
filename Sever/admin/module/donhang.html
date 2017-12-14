@@ -1,0 +1,48 @@
+<h1>Tất cả đơn hàng</h1>
+<input type="text" ng-model="timkiem" class="form-control">
+<!-- hiển thị tất cả các sản phẩm -->
+<div class="row" style="margin-top: 50px;">
+    <div class="col-md-2 text-center" ng-repeat="dh in danhsachdonhang| filter: timkiem">
+        <a href="" class="fa  fa-2x fa-remove" ng-click="XoaDonHang(dh)"></a><br>
+        <a href="" ng-click="XemChiTietDonHang(dh)"><span class="fa fa-5x fa-file-text-o"></span></a><br>
+        <span ng-click="XemChiTietDonHang(dh)"><a href="" style="color: blue;">{{dh.MaDonHang}}</a></span><br>
+        <span>{{dh.NgayDatHang| dateToISO | date:'hh:MM:ss dd/MM/yyyy'}}</span><br>
+    </div>
+</div>
+
+<!-- Phần Popup hiện chi tiết đơn hàng -->
+<div id="popupchitietdonhang" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="text-center col-md-2">Ảnh sản phẩm</th>
+                            <th class="text-center col-md-4">Tên sản phẩm</th>
+                            <th class="text-center col-md-1">Đơn giá</th>
+                            <th class="text-center col-md-1">Số lượng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="ctdh in danhsachchitietdonhang">
+                            <td class="text-center"><img ng-src="images/anhsanpham/{{ctdh.HinhAnh}}.jpg" height="80px"></td>
+                            <td style="vertical-align: middle;">{{ctdh.TenSanPham}}</td>
+                            <td style="vertical-align: middle; font-weight: bold;">{{ctdh.DonGia| currency: '':0}} VNĐ</td>
+<<<<<<< HEAD
+                            <td style="vertical-align: middle; font-weight: bold;">{{ctdh.SoLuong1}}</td>
+=======
+                            <td style="vertical-align: middle; font-weight: bold;">{{ctdh.SoLuong}}</td>
+>>>>>>> 5d8fedc77b5614741038244d5d51e262c0c64ad3
+                        </tr>
+                        <tr>
+                            <td class="text-center" colspan="2" style="font-weight: bold;">Tổng cộng</td>
+                            <td class="text-center" colspan="3" style="font-weight: bold; color: #790000">{{danhsachchitietdonhang| tongcong | currency: '':0}} VNĐ</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

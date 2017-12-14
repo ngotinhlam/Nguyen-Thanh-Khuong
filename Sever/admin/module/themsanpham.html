@@ -1,0 +1,49 @@
+<h1>Thêm sản phẩm</h1>
+<form name="form" novalidate>
+    <div class="row">
+        <div class="col-md-6">
+            <select class="form-control" name="loaisanpham" ng-model="loaisanpham" ng-options="lsp.TenLoai for lsp in danhsachloaisanpham" required>
+                <option value="">----Chọn loại sản phẩm----</option>
+            </select>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <input type="text" name="tensanpham" ng-model="tensanpham" placeholder="Tên sản phẩm" class="form-control" required>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <input type="number" name="dongia" ng-model="dongia" placeholder="Đơn giá" class="form-control" required>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <input type="number" name="soluong" ng-model="soluong" placeholder="Số lượng" class="form-control" required>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <textarea name="mota" ng-model="mota" style="width: 420px;" rows="5" placeholder="Mô tả"></textarea>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="fileUpload" style="margin-left: 10px;">
+            <input type="file" file-model class="upload" name="image" ng-model="image" required/>
+            <img class="imageupload" ng-src="{{urlImage}}">
+            <span class="chuthichanhthe"><br/><br/>Ảnh sản phẩm<br/><br/><br/><br/>Click vào đây để chọn ảnh</span>
+        </div>
+    </div>
+</form>
+<br><br><br><br><br>
+<div class="row">
+    <button class="btn btn-primary col-md-4 col-md-offset-4" ng-disabled="form.$invalid" ng-click="ThemSanPham()">Thêm</button>    
+</div>
+
+
+

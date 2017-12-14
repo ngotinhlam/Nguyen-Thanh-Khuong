@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="open_menu">Mở menu</string>
+    <string name="close_menu">Đóng menu</string>
+    <string name="action_name_load_data">com.nguyenthanhkhuong.banhoa.LOADDATA</string>
+    <string name="lost_internet_connection">Mất kết nối internet, vui lòng kiểm tra kết nối</string>
+    <string name="login_required"><u><i>Đăng nhập để có thể mua hàng</i></u></string>
+    <string name="take_photo">Chụp ảnh</string>
+    <string name="choose_image_from_gallery">Chọn ảnh từ thư viện</string>
+    <string name="logout"><u>Đăng xuất</u></string>
+    <string name="sharedpreferences_key_authentication">auth</string>
+    <string name="key_username">username</string>
+    <string name="key_password">password</string>
+    <string name="have_not_account"><u>Chưa có tài khoản. Đăng ký</u></string>
+    <string name="url_host">http://192.168.1.214</string>
+    <string name="url_anh_san_pham">/banhoa/admin/images/anhsanpham/</string>
+    <string name="url_anh_banner">/banhoa/admin/images/banner/</string>
+    <string name="url_lay_tat_ca_banner">/banhoa/requestclient/tatcabanner.php</string>
+    <string name="url_lay_tat_ca_san_pham">/banhoa/requestclient/tatcasanpham.php</string>
+    <string name="url_lay_tat_ca_loai_san_pham">/banhoa/requestclient/tatcaloaisanpham.php</string>
+    <string name="url_dang_ky_tai_khoan">/banhoa/requestclient/dangkytaikhoan.php</string>
+    <string name="url_kiem_tra_dang_nhap">/banhoa/requestclient/kiemtradangnhap.php</string>
+    <string name="url_mua_hang">/banhoa/requestclient/themdonhang.php</string>
+</resources>

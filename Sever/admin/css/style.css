@@ -1,0 +1,48 @@
+/* ---------------------Bắt đầu phần khung chọn ảnh ------------------------- */
+.fileUpload {
+    position: relative;
+    width: 22rem;
+    height: 22rem;
+    border: #245269 thin;
+    border-style: dashed;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem 0;
+}
+.upload {
+    width: 22rem;
+    height: 22rem;
+    position: absolute;
+    top: 0;
+    left: 0;    
+    opacity: 0;
+    cursor: pointer;
+    background-color: yellow;
+    z-index: 3;
+}
+#choose_image {
+    width: 22rem;
+    height: 22rem;
+    position: absolute;
+    top: 0;
+    left: 0;    
+    opacity: 0.6;
+    cursor: pointer;
+    background-color: #00d8ff;
+    z-index: 2;
+}
+.chuthichanhthe {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.imageupload {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 22rem;
+    height: 22rem;
+    border: none;
+    z-index: 1;
+}
+/* ---------------------Kết thúc phần khung chọn ảnh ----------------------- */
+
